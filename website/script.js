@@ -492,7 +492,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             return right.calories_normal - left.calories_normal || right.price - left.price;
         }
 
-        return ROUTES[localState.route].score(right) - ROUTES[localState.route].score(left) || left.price - right.price;
+        return right.scores[localState.route] - left.scores[localState.route] || left.price - right.price;
     }
 
     function renderActiveTags(container, localState) {
@@ -602,18 +602,30 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     function flattenData(raw) {
         return raw.brands.flatMap((brand) =>
-            brand.items.map((item) => ({
-                ...item,
-                brandName: brand.name,
-                brandStyle: brand.style,
-                sugarDrop: item.calories_normal - item.calories_nosugar,
-                searchable: [
-                    item.name,
-                    item.category,
-                    brand.name,
-                    brand.style
-                ].join(" ").toLowerCase()
-            }))
+            brand.items.map((item) => {
+                const flattened = {
+                    ...item,
+                    brandName: brand.name,
+                    brandStyle: brand.style,
+                    sugarDrop: item.calories_normal - item.calories_nosugar,
+                    searchable: [
+                        item.name,
+                        item.category,
+                        brand.name,
+                        brand.style
+                    ].join(" ").toLowerCase()
+                };
+                flattened.scores = {
+                    all: ROUTES.all.score(flattened),
+                    tea: ROUTES.tea.score(flattened),
+                    milk: ROUTES.milk.score(flattened),
+                    fruit: ROUTES.fruit.score(flattened),
+                    chewy: ROUTES.chewy.score(flattened),
+                    light: ROUTES.light.score(flattened),
+                    budget: ROUTES.budget.score(flattened)
+                };
+                return flattened;
+            })
         );
     }
 

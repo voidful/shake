@@ -2251,6 +2251,6 @@ for brand in brands_info:
 os.makedirs('data', exist_ok=True)
 
 with open('data/drink-database.json', 'w', encoding='utf-8') as f:
-    json.dump(generated_db, f, ensure_ascii=False, indent=2)
+    json.dump(generated_db, f, ensure_ascii=False, separators=(',', ':'))
 
 print(f"Successfully generated {total_items} drinks across 300 brands (Deep Review Verification Injection).")
