@@ -221,8 +221,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     bindNavScroll(elements.nav);
 
     try {
-        const response = await fetch("../data/drink-database.json");
-        if (!response.ok) {
+        let response = await fetch("../data/drink-database.json").catch(() => null);
+        if (!response || !response.ok) {
+            response = await fetch("./data/drink-database.json").catch(() => null);
+        }
+        if (!response || !response.ok) {
             throw new Error("drink-database.json 讀取失敗");
         }
 
