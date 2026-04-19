@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搖杯誌 SHAKE | 台灣手搖杯指南</title>
+    <meta name="description" content="不是只列出飲品，而是帶你看懂台灣手搖杯產業，從品牌風格、類型圖鑑到價格與熱量，找到真正適合你的那杯。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-glow page-glow-a"></div>
+    <div class="page-glow page-glow-b"></div>
+    <div class="page-texture"></div>
+
+    <nav class="site-nav" id="site-nav">
+        <div class="container nav-inner">
+            <a class="site-logo" href="#top">
+                <span class="logo-mark">SHAKE</span>
+                <span class="logo-text">搖杯誌</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#industry">產業風景</a>
+                <a href="#formula">選杯公式</a>
+                <a href="#atlas">類型圖鑑</a>
+                <a href="#finder">找飲料</a>
+            </div>
+
+            <a class="nav-cta" href="#finder">找一杯適合的</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="top">
+            <div class="container hero-layout">
+                <div class="hero-copy reveal">
+                    <div class="eyebrow">TAIWAN BUBBLE TEA FIELD GUIDE</div>
+                    <h1>不是只列出品項，而是帶你看懂 <em>台灣手搖杯產業</em></h1>
+                    <p class="hero-description">
+                        從品牌風格、類型差異、甜度與熱量變化開始理解，最後再回到資料庫找那一杯真正適合你的手搖。
+                        你不需要先知道要點什麼，只要先知道今天想喝什麼感覺。
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#formula">先學怎麼選</a>
+                        <a class="button button-secondary" href="#finder">直接找飲料</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <article class="stat-card">
+                            <span class="stat-value" id="stat-brands">300+</span>
+                            <span class="stat-label">收錄品牌</span>
+                        </article>
+                        <article class="stat-card">
+                            <span class="stat-value" id="stat-drinks">13,500</span>
+                            <span class="stat-label">飲品資料</span>
+                        </article>
+                        <article class="stat-card">
+                            <span class="stat-value" id="stat-price">$25–135</span>
+                            <span class="stat-label">價格區間</span>
+                        </article>
+                        <article class="stat-card">
+                            <span class="stat-value" id="stat-updated">2026-04-18</span>
+                            <span class="stat-label">資料更新</span>
+                        </article>
+                    </div>
+                </div>
+
+                <aside class="hero-panel reveal">
+                    <div class="panel-label">MARKET SNAPSHOT</div>
+                    <h2>先掌握市場，再決定今天怎麼喝</h2>
+                    <p class="panel-copy">
+                        不用一開始就背品牌或刷整張菜單。先記住市場裡最常見的幾個訊號，等一下進入 Finder 時會順很多。
+                    </p>
+
+                    <div class="hero-snapshot-grid">
+                        <article class="snapshot-card">
+                            <span class="mini-label">平均改無糖</span>
+                            <strong id="hero-sugar-drop">-150 kcal</strong>
+                            <p>甜度一降，茶底通常也會更明顯。</p>
+                        </article>
+                        <article class="snapshot-card">
+                            <span class="mini-label">最大宗類型</span>
+                            <strong id="hero-top-category">果汁茶類</strong>
+                            <p id="hero-top-category-copy">目前最多人喝的市場主流。</p>
+                        </article>
+                        <article class="snapshot-card">
+                            <span class="mini-label">無糖基準杯</span>
+                            <strong id="hero-zero-sugar">1,000+</strong>
+                            <p>先喝基準杯，比一直猜品牌更快。</p>
+                        </article>
+                    </div>
+
+                    <div class="panel-note">
+                        真正影響喜歡與否的，通常是茶底、奶體、配料和甜度的組合，不是只看品名。
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="section" id="industry">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div class="eyebrow">INDUSTRY MAP</div>
+                    <h2>台灣手搖杯產業，大致能看成 6 種風格</h2>
+                    <p>
+                        同樣賣奶茶，每個品牌真正競爭的不是只有甜度，而是「它想被記住成什麼樣子」。
+                        先理解品牌語言，比記名字更重要。
+                    </p>
+                </div>
+
+                <div class="industry-grid">
+                    <article class="industry-card reveal">
+                        <div class="industry-index">01</div>
+                        <h3>經典宗師</h3>
+                        <p>定義大家對手搖的共同記憶，從珍奶、四季春、國民奶茶建立基準口味。</p>
+                        <div class="industry-brands">50嵐・清心福全・春水堂・翰林茶館</div>
+                    </article>
+
+                    <article class="industry-card reveal">
+                        <div class="industry-index">02</div>
+                        <h3>文青茶感</h3>
+                        <p>強調熟成、焙火、茶韻與空間感，適合想喝出茶底差異的人。</p>
+                        <div class="industry-brands">可不可熟成紅茶・得正・八曜和茶・不要對我尖叫</div>
+                    </article>
+
+                    <article class="industry-card reveal">
+                        <div class="industry-index">03</div>
+                        <h3>果茶派</h3>
+                        <p>主打清爽、果香與季節感，常常是怕膩、怕厚的人最容易愛上的路線。</p>
+                        <div class="industry-brands">麻古茶坊・大苑子・Mr.Wish・初韻</div>
+                    </article>
+
+                    <article class="industry-card reveal">
+                        <div class="industry-index">04</div>
+                        <h3>咀嚼狂粉</h3>
+                        <p>把配料當成主角，珍珠、粉粿、草仔粿、凍類本身就是品牌辨識度。</p>
+                        <div class="industry-brands">珍煮丹・五桐號・一沐日・魚池貳壹</div>
+                    </article>
+
+                    <article class="industry-card reveal">
+                        <div class="industry-index">05</div>
+                        <h3>濃奶厚感</h3>
+                        <p>重視奶體、厚度與滿足感，從鮮奶茶、厚奶到燕麥奶都是這條線的延伸。</p>
+                        <div class="industry-brands">迷客夏・十杯・上宇林・約翰紅茶公司</div>
+                    </article>
+
+                    <article class="industry-card reveal">
+                        <div class="industry-index">06</div>
+                        <h3>區域強權</h3>
+                        <p>很多人的命定品牌不是全國連鎖，而是只在某座城市很強、很有在地感的那一家。</p>
+                        <div class="industry-brands">茶の魔手・叮哥茶飲・樺達奶茶・波哥</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-contrast" id="formula">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div class="eyebrow">CHOOSING FORMULA</div>
+                    <h2>選到喜歡的手搖，不靠運氣，靠順序</h2>
+                    <p>
+                        如果每次都從菜單第一頁開始看，很難建立自己的口味地圖。
+                        反過來，先用下面四步走，會快很多。
+                    </p>
+                </div>
+
+                <div class="formula-layout">
+                    <div class="formula-grid">
+                        <article class="formula-card reveal">
+                            <span class="formula-step">STEP 1</span>
+                            <h3>先決定今天要茶感、奶感還是果感</h3>
+                            <p>你是在找清爽、厚感、香氣，還是純粹的解渴？先決定體感，方向就會縮很快。</p>
+                        </article>
+
+                        <article class="formula-card reveal">
+                            <span class="formula-step">STEP 2</span>
+                            <h3>再決定要不要咀嚼</h3>
+                            <p>很多人以為自己愛某品牌，其實是愛珍珠、凍類或粉粿的口感組合。</p>
+                        </article>
+
+                        <article class="formula-card reveal">
+                            <span class="formula-step">STEP 3</span>
+                            <h3>甜度不只影響甜，也影響茶香</h3>
+                            <p>正常糖到無糖平均可差約 150 kcal，同時也會明顯改變茶底被感受到的方式。</p>
+                        </article>
+
+                        <article class="formula-card reveal">
+                            <span class="formula-step">STEP 4</span>
+                            <h3>最後才用價格與熱量做現實收斂</h3>
+                            <p>先找到風味方向，再看預算和負擔，比一開始就只盯價格更容易喝到對味的那杯。</p>
+                        </article>
+                    </div>
+
+                    <aside class="formula-callout reveal">
+                        <div class="callout-label">搖杯誌的選杯公式</div>
+                        <h3>茶底 × 奶體/果體 × 咀嚼 × 甜度</h3>
+                        <p>
+                            同樣叫奶茶，差別可能來自熟成紅茶、烏龍、鮮奶、奶精、燕麥奶，甚至只是有沒有加一層奶蓋。
+                            先把一杯手搖拆開看，你就會知道自己喜歡的是哪個部分。
+                        </p>
+                        <div class="callout-tags">
+                            <span>茶香辨識</span>
+                            <span>配料分流</span>
+                            <span>熱量有感</span>
+                            <span>品牌個性</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="atlas">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div class="eyebrow">CATEGORY ATLAS</div>
+                    <h2>先認識類型，會比背品牌更有用</h2>
+                    <p>
+                        每一類飲品代表一種喝法與期待值。
+                        點開你最有感的類型，網站會直接把篩選帶到對應結果。
+                    </p>
+                </div>
+
+                <div class="category-grid" id="category-grid"></div>
+            </div>
+        </section>
+
+        <section class="section section-finder" id="finder">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <div class="eyebrow">DRINK FINDER</div>
+                    <h2>從感覺出發，找到真正想喝的那杯</h2>
+                    <p>
+                        先選路線，再搭配搜尋、品牌與類型篩選。
+                        這裡不是純列表，而是幫你縮小到比較有可能喜歡的範圍。
+                    </p>
+                </div>
+
+                <div class="finder-shell reveal">
+                    <div class="route-buttons finder-route-buttons" id="finder-route-buttons"></div>
+
+                    <div class="route-story" id="route-story"></div>
+
+                    <div class="controls-grid">
+                        <label class="control-field control-search">
+                            <span>搜尋關鍵字</span>
+                            <input type="text" id="search-bar" placeholder="搜尋飲料、類型、品牌風格，例如：波霸、熟成、果茶">
+                        </label>
+
+                        <label class="control-field">
+                            <span>品牌</span>
+                            <select id="brand-filter">
+                                <option value="ALL">所有品牌</option>
+                            </select>
+                        </label>
+
+                        <label class="control-field">
+                            <span>類型</span>
+                            <select id="category-filter">
+                                <option value="ALL">所有類型</option>
+                            </select>
+                        </label>
+
+                        <label class="control-field">
+                            <span>排序</span>
+                            <select id="sort-select">
+                                <option value="recommended">推薦排序</option>
+                                <option value="price-asc">價格低到高</option>
+                                <option value="price-desc">價格高到低</option>
+                                <option value="nosugar-asc">無糖熱量低到高</option>
+                                <option value="normal-desc">正常糖熱量高到低</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="finder-actions">
+                        <div class="active-tags" id="active-tags"></div>
+                        <button class="text-button" id="clear-filters" type="button">清除篩選</button>
+                    </div>
+
+                    <div class="finder-insights" id="finder-insights"></div>
+                </div>
+
+                <div class="results-head reveal">
+                    <h2>推薦清單</h2>
+                    <span id="results-count">載入中...</span>
+                </div>
+
+                <p class="results-helper reveal" id="results-helper"></p>
+
+                <div class="drinks-grid" id="drinks-grid"></div>
+
+                <div class="load-more-wrap">
+                    <button class="button button-secondary load-more" id="load-more" type="button">再看更多</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <div>
+                <div class="footer-brand">搖杯誌 SHAKE</div>
+                <p class="footer-copy">
+                    不是只幫你點一杯，而是幫你理解台灣手搖杯的市場、類型與選擇邏輯。
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#industry">產業風景</a>
+                <a href="#formula">選杯公式</a>
+                <a href="#atlas">類型圖鑑</a>
+                <a href="#finder">找飲料</a>
+            </div>
+
+            <div class="footer-meta">
+                <span>資料更新：<strong id="data-updated">2026-04-18</strong></span>
+                <span>資料來源：<code>drink-database.json</code></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
